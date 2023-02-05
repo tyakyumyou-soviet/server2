@@ -11,7 +11,7 @@ services:
     env: python
     region: singapore
     buildCommand: './build.sh'
-    startCommand: 'gunicorn django-website-08-master.wsgi:application'
+    startCommand: 'gunicorn pj_form.wsgi:application'
     plan: free
     branch: main
     healthCheckPath: /
